@@ -1,0 +1,21 @@
+recipie = Recipie.new(title: params[:recipie][:title], caliroes: params[:recipie][:caliroes])  <-this is called mass assignment
+
+same as strong params:
+
+recipie = Recipie.new(recipie_params)                       <-this is strong params
+private
+def recipie_params
+  params.require(:recipie).permit(:title,caliroes)
+end
+**************
+the 2 different ways are the same becasue in the first one we pick and choose what is assigned
+in the 2nd way, we pass in a hash of preassigned(preapproved) values
+the first one is also preapproved, just in the same line.
+
+
+if for mdoesnt need to wrap aroudn obejct use form_tag rather than for_for
+##########
+Any table that contains two foreign keys can be thought of as a join table.
+it will be comments in lab
+user comment post
+User has_many :posts, through: :comments MEANS
