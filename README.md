@@ -29,7 +29,7 @@ Things get slightly more complicated when we talk about the relationship between
     <td> post_id </td>
     <td> user_id </td>
   </tr>
-  
+
   <tr>
     <td> 1 </td>
     <td> "I loved this post!" </td>
@@ -173,3 +173,5 @@ Because we've set up a join model, the interface will look almost identical. We 
 Displaying data via a `has_many, through` relationship looks identical to displaying data through a normal relationship. That's the beauty of abstraction –– all of the details about how our models are associated with each other get abstracted away, and we can focus simply on the presentation.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/displaying-has-many-through-rails' title='Displaying Has Many Through Rails'>Displaying Has Many Through Rails</a> on Learn.co and start learning to code for free.</p>
+
+done
