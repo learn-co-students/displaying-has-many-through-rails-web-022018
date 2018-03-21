@@ -1,0 +1,7 @@
+
+<ul>
+  <li>
+    Pots: <%= @comment.post.content%><br>
+    <%= link_to @comment.user.username, user_path(@comment.user)%>'s comment: <%= @comment.content%><br>
+  </li>
+</ul>
